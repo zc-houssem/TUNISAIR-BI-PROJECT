@@ -5,8 +5,11 @@
 - Docker
 - Dbeaver SQL Client
 - Node.js
+- React
+- Vite
 - Python
-- Django installed with pip
+- Django
+- Swagger
 
 # Create an Oracle Container (Docker)
 
