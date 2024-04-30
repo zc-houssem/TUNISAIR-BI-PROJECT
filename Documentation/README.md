@@ -2,14 +2,15 @@
 
 # Software & Requirements
 
-- Docker
+- Docker : Container For Oracle DB
 - Dbeaver SQL Client
-- Node.js
+- Node.js (20)
 - React
 - Vite
 - Python
 - Django
 - Swagger
+- Postman
 
 # Create an Oracle Container (Docker)
 
@@ -24,8 +25,27 @@ docker pull container-registry.oracle.com/database/express:latest
 docker container create -it --name oracle-test -p 1521:1521 -e ORACLE_PWD=welcome123 container-registry.oracle.com/database/express:latest
 ```
 
-# Create Front-End Dashboard
+### Make sure to install node
+
+npm install -g yarn
+
+
+# Create The Front-End Dashboard :
 
 ```bash
-yarn create react-admin test-admin
+yarn create react-admin tunisair-bi-app
 ```
+
+# To install dependancies :
+
+```bash
+yarn
+```
+
+# To run the react app :
+
+```bash 
+yarn dev
+```
+
+

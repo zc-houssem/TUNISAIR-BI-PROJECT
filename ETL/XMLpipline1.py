@@ -6,7 +6,7 @@ def extract(xml_file):
     try:
         tree = ET.parse(xml_file)
         root = tree.getroot()
-
+        print('im here')
         # Liste pour stocker les données extraites
         extracted_data = []
 
@@ -24,47 +24,47 @@ def extract(xml_file):
             return element.attrib.get(attribute) if element is not None else None
 
         # Parcourir les éléments du fichier XML
-        for transaction in root.findall('.//rev:Transaction', ns):
-            data = {
-                'EventNumber': get_text(transaction.find('.//rev:EventNumber', ns)),
-                'EventVersion': get_text(transaction.find('.//rev:EventVersion', ns)),
-                'EventType': get_text(transaction.find('.//rev:EventType', ns)),
-                'EventDateTime': get_text(transaction.find('.//rev:EventDateTime', ns)),
-                'EntityStatus': get_text(transaction.find('.//rev:EntityStatus', ns)),
-                'EventTypeShortCode': get_text(transaction.find('.//rev:EventTypeShortCode', ns)),
-                'JournalDate': get_text(transaction.find('.//rev:JournalDate', ns)),
-                'CreatedBy': get_text(transaction.find('.//rev:CreatedBy', ns)),
-                'OfficeId': get_text(transaction.find('.//rev:OfficeId', ns)),
-                'DocumentInternalId': get_attribute(transaction.find('.//rev:Document', ns), 'InternalId'),
-                'PrimaryDocumentNbr': get_attribute(transaction.find('.//rev:Document', ns), 'PrimaryDocumentNbr'),
-                'DocumentType': get_attribute(transaction.find('.//rev:Document', ns), 'Type'),
-                'DocumentOperationalStatus': get_attribute(transaction.find('.//rev:Document', ns), 'DocumentOperationalStatus'),
-                'IssueIndicator': get_attribute(transaction.find('.//rev:Document', ns), 'IssueIndicator'),
-                'TransactionCode': get_attribute(transaction.find('.//rev:Document', ns), 'TransactionCode'),
-                'TransactionType': get_attribute(transaction.find('.//rev:Document', ns), 'TransactionType'),
-                'NumberOfConjunctiveTickets': get_attribute(transaction.find('.//rev:Document', ns), 'NumberOfConjunctiveTickets'),
-                'FullRouting': get_attribute(transaction.find('.//rev:Document', ns), 'FullRouting'),
-                'ValidatingCarrier': get_attribute(transaction.find('.//rev:Document', ns), 'ValidatingCarrier'),
-                'DateOfIssuance': get_attribute(transaction.find('.//rev:Document', ns), 'DateOfIssuance'),
-                'AcquisitionType': get_attribute(transaction.find('.//rev:Document', ns), 'AcquisitionType'),
-                'InvoluntaryIndicator': get_attribute(transaction.find('.//rev:Document', ns), 'InvoluntaryIndicator'),
-                'IsLafAppliedIndicator': get_attribute(transaction.find('.//rev:Document', ns), 'IsLafAppliedIndicator'),
-                'IsRedemptionTicket': get_attribute(transaction.find('.//rev:Document', ns), 'IsRedemptionTicket'),
-                'IsRedemptionWithFareTicket': get_attribute(transaction.find('.//rev:Document', ns), 'IsRedemptionWithFareTicket'),
-                'IsScheduleChange': get_attribute(transaction.find('.//rev:Document', ns), 'IsScheduleChange'),
-                'AgencyName': get_attribute(transaction.find('.//rev:Document', ns), 'AgencyName'),
-                'IssuanceDetails': {
-                    'CityPOS': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'CityPOS'),
-                    'IssuerSystem': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'IssuerSystem'),
-                    'Channel': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'Channel'),
-                    'Iata': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'Iata'),
-                    'OfficeId': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'OfficeId'),
-                    'CountryCodeOfIssue': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'CountryCodeOfIssue'),
-                    'SASI': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'SASI'),
-                    'AgentSign': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'AgentSign')
-                }
+        transaction  = root.find('.//rev:Transaction', ns)
+        data = {
+            'EventNumber': get_text(transaction.find('.//rev:EventNumber', ns)),
+            'EventVersion': get_text(transaction.find('.//rev:EventVersion', ns)),
+            'EventType': get_text(transaction.find('.//rev:EventType', ns)),
+            'EventDateTime': get_text(transaction.find('.//rev:EventDateTime', ns)),
+            'EntityStatus': get_text(transaction.find('.//rev:EntityStatus', ns)),
+            'EventTypeShortCode': get_text(transaction.find('.//rev:EventTypeShortCode', ns)),
+            'JournalDate': get_text(transaction.find('.//rev:JournalDate', ns)),
+            'CreatedBy': get_text(transaction.find('.//rev:CreatedBy', ns)),
+            'OfficeId': get_text(transaction.find('.//rev:OfficeId', ns)),
+            'DocumentInternalId': get_attribute(transaction.find('.//rev:Document', ns), 'InternalId'),
+            'PrimaryDocumentNbr': get_attribute(transaction.find('.//rev:Document', ns), 'PrimaryDocumentNbr'),
+            'DocumentType': get_attribute(transaction.find('.//rev:Document', ns), 'Type'),
+            'DocumentOperationalStatus': get_attribute(transaction.find('.//rev:Document', ns), 'DocumentOperationalStatus'),
+            'IssueIndicator': get_attribute(transaction.find('.//rev:Document', ns), 'IssueIndicator'),
+            'TransactionCode': get_attribute(transaction.find('.//rev:Document', ns), 'TransactionCode'),
+            'TransactionType': get_attribute(transaction.find('.//rev:Document', ns), 'TransactionType'),
+            'NumberOfConjunctiveTickets': get_attribute(transaction.find('.//rev:Document', ns), 'NumberOfConjunctiveTickets'),
+            'FullRouting': get_attribute(transaction.find('.//rev:Document', ns), 'FullRouting'),
+            'ValidatingCarrier': get_attribute(transaction.find('.//rev:Document', ns), 'ValidatingCarrier'),
+            'DateOfIssuance': get_attribute(transaction.find('.//rev:Document', ns), 'DateOfIssuance'),
+            'AcquisitionType': get_attribute(transaction.find('.//rev:Document', ns), 'AcquisitionType'),
+            'InvoluntaryIndicator': get_attribute(transaction.find('.//rev:Document', ns), 'InvoluntaryIndicator'),
+            'IsLafAppliedIndicator': get_attribute(transaction.find('.//rev:Document', ns), 'IsLafAppliedIndicator'),
+            'IsRedemptionTicket': get_attribute(transaction.find('.//rev:Document', ns), 'IsRedemptionTicket'),
+            'IsRedemptionWithFareTicket': get_attribute(transaction.find('.//rev:Document', ns), 'IsRedemptionWithFareTicket'),
+            'IsScheduleChange': get_attribute(transaction.find('.//rev:Document', ns), 'IsScheduleChange'),
+            'AgencyName': get_attribute(transaction.find('.//rev:Document', ns), 'AgencyName'),
+            'IssuanceDetails': {
+                'CityPOS': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'CityPOS'),
+                'IssuerSystem': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'IssuerSystem'),
+                'Channel': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'Channel'),
+                'Iata': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'Iata'),
+                'OfficeId': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'OfficeId'),
+                'CountryCodeOfIssue': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'CountryCodeOfIssue'),
+                'SASI': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'SASI'),
+                'AgentSign': get_attribute(transaction.find('.//rev:IssuanceDetails', ns), 'AgentSign')
             }
-            extracted_data.append(data)
+        }
+        extracted_data.append(data)
 
         print("Extraction des données terminée.")
         return extracted_data
@@ -189,14 +189,14 @@ def load(transformed_data, username, password, host, port, service_name, table_n
 # Utilisation de la fonction load avec les données transformées
 # Assurez-vous d'avoir les informations de connexion à la base de données Oracle correctes
 username = "system"
-password = "10052000"
+password = "welcome123"
 host = "localhost"  # Ou l'adresse IP de votre serveur Oracle
 port = "1521"  # Port par défaut pour Oracle
 service_name = "orcl"
 table_name = "tunisair"
 
 # Test de la fonction extract() avec le fichier XML fourni
-xml_file = 'C:\\pfe\\Fichiers XML\\x1\\xml1 (2).xml'
+xml_file = './PRD.REV.TU.DWH.REGULAR_230412_090000_0000001.xml'
 extracted_data = extract(xml_file)
 if extracted_data:
     transformed_data = transform_simple(extracted_data)
