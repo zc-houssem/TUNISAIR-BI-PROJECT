@@ -1,0 +1,1226 @@
+{
+  "Transaction": {
+    "Event": {
+      "EventNumber": "0",
+      "EventVersion": "3",
+      "EventType": "Confirm Issuance after Exchanged",
+      "Event": "2023-04-11T08:59:59",
+      "EntityStatus": "VALID",
+      "EventTypeShortCode": "HOY",
+      "JournalDate": "2023-04-11",
+      "WithUpdatedAccountedDate": "N",
+      "CreatedBy": "9994WS",
+      "OfficeId": "PARED3100",
+      "Usecase": {
+        "UsecaseType": "Confirm Issuance after Exchanged",
+        "ModifiedEntities": [
+          {
+            "@ElementType": "TKT_FLI",
+            "Action": [
+              {
+                "@Actor": "OFFLINE_ACQUISITION",
+                "@ActionDetail": "ENDREPORTINGPERIOD_UPDATE",
+                "SubAction": {
+                  "@Description": "Updated Reporting Period"
+                }
+              },
+              {
+                "@Actor": "OFFLINE_ACQUISITION",
+                "@ActionDetail": "ENDBILLINGPERIOD_UPDATE",
+                "SubAction": {
+                  "@Description": "Updated Billing Period"
+                }
+              },
+              {
+                "@Actor": "OFFLINE_ACQUISITION",
+                "@ActionDetail": "OFFLINE_CONFIRMATION",
+                "SubAction": {
+                  "@Description": "Confirmation Done"
+                }
+              },
+              {
+                "@Actor": "OFFLINE_ACQUISITION",
+                "@ActionDetail": "OFFLINE_RECONCILIATION",
+                "SubAction": {
+                  "@Description": "Issuer System Identifier&#10Flight Details&#10"
+                }
+              },
+              {
+                "@Actor": "SALES_REGISTRATION",
+                "@ActionDetail": "VALIDATION_DONE"
+              },
+              {
+                "@Actor": "PRORATION",
+                "@ActionDetail": "PRORATION_DONE",
+                "SubAction": [
+                  {
+                    "@Description": "Proration status: OK"
+                  },
+                  {
+                    "@Description": "Fare Used: COLLECTED"
+                  }
+                ]
+              },
+              {
+                "@Actor": "PATCH",
+                "@ActionDetail": "PATCH_DONE"
+              },
+              {
+                "@Actor": "SALE_AUDITING",
+                "@ActionDetail": "SALE_AUDIT",
+                "SubAction": {
+                  "@Description": "Status set to L"
+                }
+              }
+            ]
+          },
+          {
+            "@ElementType": "TKT_FLI_CPN",
+            "@ElementID": "1",
+            "Action": [
+              {
+                "@Actor": "PRORATION",
+                "@ActionDetail": "PRORATION_DONE"
+              },
+              {
+                "@Actor": "TAX_BOX",
+                "@ActionDetail": "TAX_CALCULATION",
+                "SubAction": {
+                  "@Description": "Tax calculated for coupon 1: RK, RL, YQ, YR"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Document": {
+      "@InternalId": "24952747",
+      "@PrimaryDocumentNbr": "1996384593427",
+      "@Type": "TICKET",
+      "@DocumentOperationalStatus": "O",
+      "@IssueIndicator": "REISSUE",
+      "@TransactionCode": "TKTT",
+      "@TransactionType": "SALE",
+      "@NumberOfConjunctiveTickets": "0",
+      "@FullRouting": "DJEORYTU",
+      "@ValidatingCarrier": "TU",
+      "@DateOfIssuance": "2021-11-03",
+      "@ValidatingAirlineAllianceCode": "N/A",
+      "@OriginalIssueInfoFreeFlow": " 1996384596325  PAR02NOV2120245396",
+      "@Code": "ETK",
+      "@AcquisitionType": "S",
+      "@InvoluntaryIndicator": "Y",
+      "@IsLafAppliedIndicator": "N",
+      "@IsRedemptionTicket": "N",
+      "@IsRedemptionWithFareTicket": "N",
+      "@IsScheduleChange": "N",
+      "@AgencyName": "GO VOYAGES TRADE",
+      "IssuanceDetails": {
+        "@CityPOS": "PAR",
+        "@IssuerSystem": "1A",
+        "@Channel": "T",
+        "@Iata": "20259654",
+        "@OfficeId": "PARED3100",
+        "@CountryCodeOfIssue": "FR",
+        "@SASI": "7906",
+        "@AgentSign": "9994WS"
+      },
+      "BookingInformation": {
+        "PNRIdentification": {
+          "AmadeusRecordLocator": {
+            "CompanyCode": "1A",
+            "ID": "LKVW68"
+          },
+          "OriginalRecordLocator": {
+            "CompanyCode": "TU",
+            "ID": "LKVW68"
+          }
+        },
+        "BookingAgencyDetails": {
+          "IataNumber": "20259654",
+          "OfficeId": "PARED3100",
+          "AgentSine": "9998WS"
+        }
+      },
+      "IssuedInExchangeFor": {
+        "PrimaryDocumentNbr": "1996384596325",
+        "IssuanceLocalDate": "2021-11-02",
+        "ExchangedCoupons": {
+          "@ConjunctiveCouponNbr": "1",
+          "@ConjunctiveDocumentNbr": "1996384596325",
+          "@Status": "E",
+          "@InvoluntaryIndicator": "I"
+        },
+        "FOP": {
+          "FOP": {
+            "@Type": "CA",
+            "@TicketedType": "MS",
+            "@CompleteFOP": "EC",
+            "AccountableEntity": {
+              "Amount": {
+                "AmountType": "PAYMENT",
+                "Amount": {
+                  "@Amount": "6",
+                  "@CurrencyCode": "EUR"
+                },
+                "ConversionRule": "NO_CONVERSION"
+              }
+            }
+          }
+        }
+      },
+      "OriginalIssueInfo": {
+        "@PrimaryDocumentNbr": "1996384596325",
+        "@IssuanceLocalDate": "2021-11-02",
+        "@IataNumber": "20245396",
+        "@CityCode": "PAR"
+      },
+      "PassengerInformation": {
+        "@Surname": "YAHIA",
+        "@FirstName": "AYLINE",
+        "@PassengerTypeCode": "INF",
+        "@FarePassengerTypeCode": "INF",
+        "@DateOfBirth": "2021-08-10",
+        "@IsStaff": "N"
+      },
+      "ItineraryDetails": {
+        "RoutingType": "I",
+        "OneWayIndicator": "Y",
+        "FinalDestination": "ORY",
+        "TODC": {
+          "OriginCityCode": "DJE",
+          "OriginCityCodeRealItinerary": "DJE",
+          "DestinationCityCode": "PAR",
+          "DestinationCityCodeRealItinerary": "PAR"
+        }
+      },
+      "PricingDetails": {
+        "IsRevenuePassenger": "N",
+        "IsITBT": "N",
+        "FareCalculation": "S-17NOV21DJE TU PAR6.57NUC6.57END ROE2.829260",
+        "FCMI": "2",
+        "IsNetRemit": "N",
+        "EndorsementText": "INVOL SKCHG 734 17NOV",
+        "CurrencyOfPayment": "EUR",
+        "FCPI": "4",
+        "FareDescription": "STANDARD",
+        "TPMSum": "0",
+        "ProrateFactorSum": "0",
+        "AREI": "Y",
+        "RemittanceAmount": {
+          "Amount": [
+            {
+              "AmountType": "PAYMENT",
+              "Amount": {
+                "@Amount": "0",
+                "@CurrencyCode": "EUR"
+              },
+              "ConversionRule": "NO_CONVERSION"
+            },
+            {
+              "AmountType": "ACCOUNTED",
+              "Amount": {
+                "@Amount": "0",
+                "@CurrencyCode": "TND"
+              },
+              "ConversionDate": "2021-11-03T00:00:00",
+              "ConversionRule": "BOOK_RATE",
+              "OriginalCurrency": "EUR",
+              "ROE": "3.28407"
+            }
+          ]
+        },
+        "TotalDocumentAmount": {
+          "Amount": [
+            {
+              "AmountType": "PAYMENT",
+              "Amount": {
+                "@Amount": "0",
+                "@CurrencyCode": "EUR"
+              },
+              "ConversionRule": "NO_CONVERSION"
+            },
+            {
+              "AmountType": "ACCOUNTED",
+              "Amount": {
+                "@Amount": "0",
+                "@CurrencyCode": "TND"
+              },
+              "ConversionDate": "2021-11-03T00:00:00",
+              "ConversionRule": "BOOK_RATE",
+              "OriginalCurrency": "EUR",
+              "ROE": "3.28407"
+            }
+          ]
+        },
+        "RevenueAttributableAgent": {
+          "@AgencyNumber": "20245396",
+          "@CityCode": "PAR",
+          "@AgencyType": "T"
+        },
+        "FareComponent": {
+          "@FareComponentNumber": "1",
+          "@FareComponentOrigin": "DJE",
+          "@FareComponentDestination": "PAR",
+          "@FareComponentAmount": "6.000000",
+          "@FareComponentCurrency": "EUR2",
+          "RelatedCoupon": {
+            "@CouponNumber": "1"
+          }
+        },
+        "TKMI": "/"
+      },
+      "Fares": {
+        "Fare": [
+          {
+            "@FareDescription": "NET",
+            "AccountableEntity": {
+              "Amount": [
+                {
+                  "AmountType": "PAYMENT",
+                  "Amount": {
+                    "@Amount": "6",
+                    "@CurrencyCode": "EUR"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "ACCOUNTED",
+                  "Amount": {
+                    "@Amount": "19.704",
+                    "@CurrencyCode": "TND"
+                  },
+                  "ConversionDate": "2021-11-03T00:00:00",
+                  "ConversionRule": "BOOK_RATE",
+                  "OriginalCurrency": "EUR",
+                  "ROE": "3.28407"
+                }
+              ]
+            }
+          },
+          {
+            "@FareDescription": "PUBLISHED",
+            "AccountableEntity": {
+              "Amount": [
+                {
+                  "AmountType": "BASE",
+                  "Amount": {
+                    "@Amount": "19",
+                    "@CurrencyCode": "TND"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "PAYMENT",
+                  "Amount": {
+                    "@Amount": "6",
+                    "@CurrencyCode": "EUR"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "ACCOUNTED",
+                  "Amount": {
+                    "@Amount": "19.704",
+                    "@CurrencyCode": "TND"
+                  },
+                  "ConversionDate": "2021-11-03T00:00:00",
+                  "ConversionRule": "BOOK_RATE",
+                  "OriginalCurrency": "EUR",
+                  "ROE": "3.28407"
+                }
+              ]
+            }
+          },
+          {
+            "@FareDescription": "SELLING",
+            "AccountableEntity": {
+              "Amount": [
+                {
+                  "AmountType": "BASE",
+                  "Amount": {
+                    "@Amount": "19",
+                    "@CurrencyCode": "TND"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "PAYMENT",
+                  "Amount": {
+                    "@Amount": "6",
+                    "@CurrencyCode": "EUR"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "ACCOUNTED",
+                  "Amount": {
+                    "@Amount": "19.704",
+                    "@CurrencyCode": "TND"
+                  },
+                  "ConversionDate": "2021-11-03T00:00:00",
+                  "ConversionRule": "BOOK_RATE",
+                  "OriginalCurrency": "EUR",
+                  "ROE": "3.28407"
+                }
+              ]
+            }
+          },
+          {
+            "@FareDescription": "ADDITIONAL_COLLECTION",
+            "AccountableEntity": {
+              "Amount": [
+                {
+                  "AmountType": "PAYMENT",
+                  "Amount": {
+                    "@Amount": "0",
+                    "@CurrencyCode": "EUR"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "ACCOUNTED",
+                  "Amount": {
+                    "@Amount": "0",
+                    "@CurrencyCode": "TND"
+                  },
+                  "ConversionDate": "2021-11-03T00:00:00",
+                  "ConversionRule": "BOOK_RATE",
+                  "OriginalCurrency": "EUR",
+                  "ROE": "3.28407"
+                }
+              ]
+            }
+          },
+          {
+            "@FareDescription": "RESIDUAL_VALUE",
+            "AccountableEntity": {
+              "Amount": [
+                {
+                  "AmountType": "PAYMENT",
+                  "Amount": {
+                    "@Amount": "0",
+                    "@CurrencyCode": "EUR"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "ACCOUNTED",
+                  "Amount": {
+                    "@Amount": "0",
+                    "@CurrencyCode": "TND"
+                  },
+                  "ConversionDate": "2021-11-03T00:00:00",
+                  "ConversionRule": "BOOK_RATE",
+                  "OriginalCurrency": "EUR",
+                  "ROE": "3.28407"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "StandardCommission": {
+        "Commission": {
+          "@CommissionType": "COAM",
+          "@ControlAdjustmentIndicator": "N",
+          "AccountableEntity": {
+            "Amount": [
+              {
+                "AmountType": "PAYMENT",
+                "Amount": {
+                  "@Amount": "0",
+                  "@CurrencyCode": "EUR"
+                },
+                "ConversionRule": "NO_CONVERSION"
+              },
+              {
+                "AmountType": "ACCOUNTED",
+                "Amount": {
+                  "@Amount": "0",
+                  "@CurrencyCode": "TND"
+                },
+                "ConversionDate": "2021-11-03T00:00:00",
+                "ConversionRule": "BOOK_RATE",
+                "OriginalCurrency": "EUR",
+                "ROE": "3.28407"
+              }
+            ]
+          }
+        }
+      },
+      "SupplementaryCommission": {
+        "Commission": {
+          "@CommissionType": " ",
+          "AccountableEntity": {
+            "Amount": [
+              {
+                "AmountType": "PAYMENT",
+                "Amount": {
+                  "@Amount": "0",
+                  "@CurrencyCode": "EUR"
+                },
+                "ConversionRule": "NO_CONVERSION"
+              },
+              {
+                "AmountType": "ACCOUNTED",
+                "Amount": {
+                  "@Amount": "0",
+                  "@CurrencyCode": "TND"
+                },
+                "ConversionDate": "2021-11-03T00:00:00",
+                "ConversionRule": "BOOK_RATE",
+                "OriginalCurrency": "EUR",
+                "ROE": "3.28407"
+              }
+            ]
+          }
+        }
+      },
+      "EffectiveCommission": {
+        "Commission": {
+          "@CommissionType": "EFFECTIVE",
+          "AccountableEntity": {
+            "Amount": [
+              {
+                "AmountType": "PAYMENT",
+                "Amount": {
+                  "@Amount": "0",
+                  "@CurrencyCode": "EUR"
+                },
+                "ConversionRule": "NO_CONVERSION"
+              },
+              {
+                "AmountType": "ACCOUNTED",
+                "Amount": {
+                  "@Amount": "0",
+                  "@CurrencyCode": "TND"
+                },
+                "ConversionDate": "2021-11-03T00:00:00",
+                "ConversionRule": "BOOK_RATE",
+                "OriginalCurrency": "EUR",
+                "ROE": "3.28407"
+              }
+            ]
+          }
+        }
+      },
+      "ReportingInformation": {
+        "ReportingInformationSource": "HOT",
+        "CurrencyOfPayment": "EUR",
+        "BSPIDorBankCode": "PAR",
+        "CountryCode": "FR",
+        "BillingPeriod": "2021-11-07",
+        "ReportingPeriod": "2021-11-07",
+        "ProcessingDate": "2023-03-30",
+        "ProcessingTime": "16:29:05",
+        "FileSequenceNumber": "000615",
+        "DynamicRunId": "F",
+        "ReportingWeekNumber": "2",
+        "IsPendingManualValidation": "N",
+        "ReportingMonthNumber": "11"
+      },
+      "Coupon": {
+        "@Number": "1",
+        "@ConjunctiveNumber": "1",
+        "@DocumentNbr": "1996384593427",
+        "@ConjunctiveDocumentNbr": "1996384593427",
+        "@Status": "O",
+        "@NotValidAfter": "2021-11-17",
+        "@IsCodeshare": "N",
+        "@IsSurfaceCoupon": "N",
+        "@IsRedemptionTicket": "N",
+        "@DetailedOperationalStatus": "O",
+        "@IsRevenuePassenger": "N",
+        "@IsExpired": "N",
+        "@IsRerouted": "N",
+        "SegmentInfo": {
+          "@OriginCityCode": "DJE",
+          "@DestinationCityCode": "PAR",
+          "@OriginAirportCode": "DJE",
+          "@DestinationAirportCode": "ORY",
+          "@FlightDate": "2021-11-17T09:30:00",
+          "@DepartureDate": "2021-11-17T11:00:00",
+          "@ArrivalDate": "2021-11-17T13:45:00",
+          "@StopoverIndicator": "J",
+          "@DirectionIndicator": "O",
+          "@FlightBookingStatus": "NS",
+          "@CodeshareType": "NO",
+          "@EquipmentCode": "320",
+          "@ChangeOfGaugeFlightIndicator": "N",
+          "ClassDetails": {
+            "BookingClass": "Y",
+            "OperatingCabinClass": "Y",
+            "MarketingCabinClass": "Y"
+          },
+          "CompanyDetails": {
+            "MarketingCarrier": "TU",
+            "OperatingCarrier": "TU"
+          },
+          "FlightIdentification": {
+            "OperatingFlightNumber": {
+              "FlightNumber": "734"
+            },
+            "MarketingFlightNumber": {
+              "FlightNumber": "734"
+            }
+          },
+          "FullFlightInformation": {
+            "@FlightDepartureDateTime": "2021-11-17T09:30:00",
+            "@FlightDepartureAirportCode": "MIR",
+            "@FlightArrivalDateTime": "2021-11-17T13:45:00",
+            "@FlightArrivalAirportCode": "ORY",
+            "FullFlightLegs": {
+              "FullFlightLeg": [
+                {
+                  "@AircraftType": "320",
+                  "@AircraftRegistrationReference": "TSIMW"
+                },
+                {
+                  "@AircraftType": "320",
+                  "@AircraftRegistrationReference": "TSIMW"
+                }
+              ]
+            }
+          }
+        },
+        "CouponDetails": {
+          "SAC": "199AEC9LSTHJN",
+          "FareBasisCode": "NL01WCLIN"
+        },
+        "CalculatedAmounts": {
+          "CouponProratedFare": {
+            "@ProrationSource": "1A_MPA",
+            "AccountableEntity": {
+              "Amount": [
+                {
+                  "AmountType": ["PAYMENT", "ORIGIN"],
+                  "Amount": {
+                    "@Amount": "6",
+                    "@CurrencyCode": "EUR"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "PRORATION_USD",
+                  "Amount": {
+                    "@Amount": "6.98",
+                    "@CurrencyCode": "USD"
+                  },
+                  "ConversionRule": "NO_CONVERSION"
+                },
+                {
+                  "AmountType": "ACCOUNTED",
+                  "Amount": {
+                    "@Amount": "19.704",
+                    "@CurrencyCode": "TND"
+                  },
+                  "ConversionDate": "2021-11-03T00:00:00",
+                  "ConversionRule": "BOOK_RATE",
+                  "OriginalCurrency": "EUR",
+                  "ROE": "3.28407"
+                }
+              ]
+            }
+          },
+          "CouponTaxes": {
+            "RemittanceTaxesCpnLvl": {
+              "RemittanceTaxCpnLvl": [
+                {
+                  "Tax": {
+                    "@NatureCode": "AC",
+                    "@ISOCode": "YQ",
+                    "@TaxDestination": "AIRLINE",
+                    "@IsClaimBack": "Y",
+                    "@PointOfApplicationIndicator": "SEC",
+                    "@TaxRecipientCategory": "YF",
+                    "@TaxRemittanceIdentifier": "U",
+                    "@SequenceQualifier": "UXI",
+                    "@SequenceNumber": "50000",
+                    "@IsInterlineable": "N",
+                    "@IsRefundable": "N",
+                    "@AppliedMethod": "COL",
+                    "@InvoluntaryExchangeMethod": "NEW_APPLICABLE",
+                    "@RelevantDate": "S",
+                    "@SectorApplication": "STRAIGHT_RATE",
+                    "@IsAlwaysRemitted": "N",
+                    "@UpdateAtFlown": "Y",
+                    "AccountableEntity": {
+                      "Amount": [
+                        {
+                          "AmountType": "PAYMENT",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "EUR"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": ["FILING", "ORIGIN"],
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "USD"
+                          },
+                          "ConversionDate": "2022-04-12T00:00:00",
+                          "ConversionRule": "BSR",
+                          "OriginalCurrency": "EUR",
+                          "ROE": "1.087659"
+                        },
+                        {
+                          "AmountType": "ACCOUNTED",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "TND"
+                          },
+                          "ConversionDate": "2021-11-03T00:00:00",
+                          "ConversionRule": "BOOK_RATE",
+                          "OriginalCurrency": "EUR",
+                          "ROE": "3.28407"
+                        }
+                      ]
+                    }
+                  },
+                  "RemittanceTaxCalculatedValues": {
+                    "AccountableEntity": {
+                      "Amount": [
+                        {
+                          "AmountType": "PAYMENT",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "EUR"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": "FILING",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "USD"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        }
+                      ]
+                    },
+                    "TaxJustification": {
+                      "@Category": "APLM",
+                      "@SubCategory": "COLLECTED"
+                    }
+                  }
+                },
+                {
+                  "Tax": {
+                    "@NatureCode": "VB",
+                    "@ISOCode": "YR",
+                    "@TaxDestination": "AIRLINE",
+                    "@IsClaimBack": "Y",
+                    "@PointOfApplicationIndicator": "SEC",
+                    "@TaxRecipientCategory": "YF",
+                    "@TaxRemittanceIdentifier": "U",
+                    "@SequenceQualifier": "UXI",
+                    "@SequenceNumber": "5000",
+                    "@IsInterlineable": "N",
+                    "@IsRefundable": "N",
+                    "@AppliedMethod": "COL",
+                    "@InvoluntaryExchangeMethod": "NEW_APPLICABLE",
+                    "@RelevantDate": "S",
+                    "@SectorApplication": "STRAIGHT_RATE",
+                    "@IsAlwaysRemitted": "N",
+                    "@UpdateAtFlown": "Y",
+                    "AccountableEntity": {
+                      "Amount": [
+                        {
+                          "AmountType": "PAYMENT",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "EUR"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": ["FILING", "ORIGIN"],
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "USD"
+                          },
+                          "ConversionDate": "2022-04-12T00:00:00",
+                          "ConversionRule": "BSR",
+                          "OriginalCurrency": "EUR",
+                          "ROE": "1.087659"
+                        },
+                        {
+                          "AmountType": "ACCOUNTED",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "TND"
+                          },
+                          "ConversionDate": "2021-11-03T00:00:00",
+                          "ConversionRule": "BOOK_RATE",
+                          "OriginalCurrency": "EUR",
+                          "ROE": "3.28407"
+                        }
+                      ]
+                    }
+                  },
+                  "RemittanceTaxCalculatedValues": {
+                    "AccountableEntity": {
+                      "Amount": [
+                        {
+                          "AmountType": "PAYMENT",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "EUR"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": "FILING",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "USD"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        }
+                      ]
+                    },
+                    "TaxJustification": {
+                      "@Category": "APLM",
+                      "@SubCategory": "COLLECTED"
+                    }
+                  }
+                },
+                {
+                  "Tax": {
+                    "@NatureCode": "SE",
+                    "@ISOCode": "RK",
+                    "@TaxDestination": "THIRD_PARTY",
+                    "@IsClaimBack": "Y",
+                    "@PointOfApplicationCode": "DJE",
+                    "@PointOfApplicationIndicator": "D",
+                    "@TaxRecipientCategory": "CO",
+                    "@TaxRecipientId": "TN",
+                    "@TaxRemittanceIdentifier": "U",
+                    "@SequenceQualifier": "UXI",
+                    "@SequenceNumber": "100000",
+                    "@IsInterlineable": "Y",
+                    "@IsRefundable": "N",
+                    "@AppliedMethod": "CAL",
+                    "@InvoluntaryExchangeMethod": "NEW_APPLICABLE",
+                    "@RelevantDate": "S",
+                    "@SectorApplication": "FIRST_COUPON",
+                    "@IsAlwaysRemitted": "N",
+                    "@UpdateAtFlown": "Y",
+                    "AccountableEntity": {
+                      "Amount": [
+                        {
+                          "AmountType": "PAYMENT",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "EUR"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": ["FILING", "ORIGIN"],
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "USD"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": "ACCOUNTED",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "TND"
+                          },
+                          "ConversionDate": "2021-11-03T00:00:00",
+                          "ConversionRule": "BOOK_RATE",
+                          "OriginalCurrency": "EUR",
+                          "ROE": "3.28407"
+                        }
+                      ]
+                    }
+                  },
+                  "RemittanceTaxCalculatedValues": {
+                    "AccountableEntity": {
+                      "Amount": [
+                        {
+                          "AmountType": "PAYMENT",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "EUR"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": "FILING",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "USD"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        }
+                      ]
+                    },
+                    "TaxJustification": [
+                      {
+                        "@Category": "GEO",
+                        "@SubCategory": "GEOCTY",
+                        "@SubCategoryValue": "TN"
+                      },
+                      {
+                        "@Category": "APLM",
+                        "@SubCategory": "CALCULATED"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Tax": {
+                    "@NatureCode": "EB",
+                    "@ISOCode": "RL",
+                    "@TaxDestination": "THIRD_PARTY",
+                    "@IsClaimBack": "Y",
+                    "@PointOfApplicationCode": "DJE",
+                    "@PointOfApplicationIndicator": "D",
+                    "@TaxRecipientCategory": "CO",
+                    "@TaxRecipientId": "TN",
+                    "@TaxRemittanceIdentifier": "U",
+                    "@SequenceQualifier": "UXI",
+                    "@SequenceNumber": "100000",
+                    "@IsInterlineable": "Y",
+                    "@IsRefundable": "N",
+                    "@AppliedMethod": "COL",
+                    "@InvoluntaryExchangeMethod": "NEW_APPLICABLE",
+                    "@RelevantDate": "S",
+                    "@SectorApplication": "FIRST_COUPON",
+                    "@IsAlwaysRemitted": "N",
+                    "@UpdateAtFlown": "Y",
+                    "AccountableEntity": {
+                      "Amount": [
+                        {
+                          "AmountType": "PAYMENT",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "EUR"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": ["FILING", "ORIGIN"],
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "TND"
+                          },
+                          "ConversionDate": "2022-04-12T00:00:00",
+                          "ConversionRule": "BSR",
+                          "OriginalCurrency": "EUR",
+                          "ROE": "3.237524"
+                        },
+                        {
+                          "AmountType": "ACCOUNTED",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "TND"
+                          },
+                          "ConversionDate": "2021-11-03T00:00:00",
+                          "ConversionRule": "BOOK_RATE",
+                          "OriginalCurrency": "EUR",
+                          "ROE": "3.28407"
+                        }
+                      ]
+                    }
+                  },
+                  "RemittanceTaxCalculatedValues": {
+                    "AccountableEntity": {
+                      "Amount": [
+                        {
+                          "AmountType": "PAYMENT",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "EUR"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        },
+                        {
+                          "AmountType": "FILING",
+                          "Amount": {
+                            "@Amount": "0",
+                            "@CurrencyCode": "USD"
+                          },
+                          "ConversionRule": "NO_CONVERSION"
+                        }
+                      ]
+                    },
+                    "TaxJustification": {
+                      "@Category": "APLM",
+                      "@SubCategory": "COLLECTED"
+                    }
+                  }
+                }
+              ]
+            },
+            "InterlineableTaxes": {
+              "Tax": [
+                {
+                  "@NatureCode": "SE",
+                  "@ISOCode": "RK",
+                  "@TaxDestination": "THIRD_PARTY",
+                  "@IsClaimBack": "Y",
+                  "@PointOfApplicationCode": "DJE",
+                  "@PointOfApplicationIndicator": "D",
+                  "@TaxRecipientCategory": "CO",
+                  "@TaxRecipientId": "TN",
+                  "@TaxRemittanceIdentifier": "U",
+                  "@SequenceQualifier": "UXI",
+                  "@SequenceNumber": "100000",
+                  "@IsInterlineable": "Y",
+                  "@IsRefundable": "N",
+                  "@AppliedMethod": "CAL",
+                  "@InvoluntaryExchangeMethod": "NEW_APPLICABLE",
+                  "@RelevantDate": "S",
+                  "@SectorApplication": "FIRST_COUPON",
+                  "@IsAlwaysRemitted": "N",
+                  "@UpdateAtFlown": "Y",
+                  "AccountableEntity": {
+                    "Amount": [
+                      {
+                        "AmountType": "PAYMENT",
+                        "Amount": {
+                          "@Amount": "0",
+                          "@CurrencyCode": "EUR"
+                        },
+                        "ConversionRule": "NO_CONVERSION"
+                      },
+                      {
+                        "AmountType": "FILING",
+                        "Amount": {
+                          "@Amount": "0",
+                          "@CurrencyCode": "USD"
+                        },
+                        "ConversionRule": "NO_CONVERSION"
+                      },
+                      {
+                        "AmountType": "ACCOUNTED",
+                        "Amount": {
+                          "@Amount": "0",
+                          "@CurrencyCode": "TND"
+                        },
+                        "ConversionDate": "2023-04-11T00:00:00",
+                        "ConversionRule": "BOOK_RATE",
+                        "OriginalCurrency": "EUR",
+                        "ROE": "3.38869"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "@NatureCode": "EB",
+                  "@ISOCode": "RL",
+                  "@TaxDestination": "THIRD_PARTY",
+                  "@IsClaimBack": "Y",
+                  "@PointOfApplicationCode": "DJE",
+                  "@PointOfApplicationIndicator": "D",
+                  "@TaxRecipientCategory": "CO",
+                  "@TaxRecipientId": "TN",
+                  "@TaxRemittanceIdentifier": "U",
+                  "@SequenceQualifier": "UXI",
+                  "@SequenceNumber": "100000",
+                  "@IsInterlineable": "Y",
+                  "@IsRefundable": "N",
+                  "@AppliedMethod": "COL",
+                  "@InvoluntaryExchangeMethod": "NEW_APPLICABLE",
+                  "@RelevantDate": "S",
+                  "@SectorApplication": "FIRST_COUPON",
+                  "@IsAlwaysRemitted": "N",
+                  "@UpdateAtFlown": "Y",
+                  "AccountableEntity": {
+                    "Amount": [
+                      {
+                        "AmountType": "PAYMENT",
+                        "Amount": {
+                          "@Amount": "0",
+                          "@CurrencyCode": "EUR"
+                        },
+                        "ConversionRule": "NO_CONVERSION"
+                      },
+                      {
+                        "AmountType": "FILING",
+                        "Amount": {
+                          "@Amount": "0",
+                          "@CurrencyCode": "USD"
+                        },
+                        "ConversionRule": "NO_CONVERSION"
+                      },
+                      {
+                        "AmountType": "ACCOUNTED",
+                        "Amount": {
+                          "@Amount": "0",
+                          "@CurrencyCode": "TND"
+                        },
+                        "ConversionDate": "2023-04-11T00:00:00",
+                        "ConversionRule": "BOOK_RATE",
+                        "OriginalCurrency": "EUR",
+                        "ROE": "3.38869"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "CouponStandardCommission": {
+            "Commission": {
+              "@CommissionType": "COAM",
+              "@ShareIndicator": "Y",
+              "AccountableEntity": {
+                "Amount": [
+                  {
+                    "AmountType": "PAYMENT",
+                    "Amount": {
+                      "@Amount": "0",
+                      "@CurrencyCode": "EUR"
+                    },
+                    "ConversionRule": "NO_CONVERSION"
+                  },
+                  {
+                    "AmountType": "ORIGIN",
+                    "Amount": {
+                      "@Amount": "0",
+                      "@CurrencyCode": "EUR"
+                    },
+                    "ConversionRule": "NO_CONVERSION"
+                  },
+                  {
+                    "AmountType": "ACCOUNTED",
+                    "Amount": {
+                      "@Amount": "0",
+                      "@CurrencyCode": "TND"
+                    },
+                    "ConversionDate": "2021-11-03T00:00:00",
+                    "ConversionRule": "BOOK_RATE",
+                    "OriginalCurrency": "EUR",
+                    "ROE": "3.28407"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ProrationDetails": {
+          "TicketedPointMileage": "1125",
+          "ProrateFactor": "2026",
+          "ProratedValues": {
+            "ProratedValue": [
+              {
+                "@ProrationSource": "1A_MPA",
+                "@ProrationCode": "MPA",
+                "AccountableEntity": {
+                  "Amount": {
+                    "AmountType": "PRORATION_USD",
+                    "Amount": {
+                      "@Amount": "6.98",
+                      "@CurrencyCode": "USD"
+                    },
+                    "ConversionRule": "NO_CONVERSION"
+                  }
+                }
+              },
+              {
+                "@ProrationSource": "1A_MPA",
+                "@ProrationCode": "MPA",
+                "AccountableEntity": {
+                  "Amount": {
+                    "AmountType": "ORIGIN",
+                    "Amount": {
+                      "@Amount": "6",
+                      "@CurrencyCode": "EUR"
+                    },
+                    "ConversionRule": "NO_CONVERSION"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "BaggageAllowance": {
+          "@Quantity": "1",
+          "@WeightUnit": "PC"
+        },
+        "ExchangeBalanceCouponLevel": {
+          "Amount": [
+            {
+              "AmountType": "PAYMENT",
+              "Amount": {
+                "@Amount": "0",
+                "@CurrencyCode": "EUR"
+              },
+              "ConversionRule": "NO_CONVERSION"
+            },
+            {
+              "AmountType": "ACCOUNTED",
+              "Amount": {
+                "@Amount": "0",
+                "@CurrencyCode": "TND"
+              },
+              "ConversionDate": "2021-11-03T00:00:00",
+              "ConversionRule": "BOOK_RATE",
+              "OriginalCurrency": "EUR",
+              "ROE": "3.28407"
+            }
+          ]
+        },
+        "SoldFlightDetails": {
+          "@OriginCityCode": "DJE",
+          "@DestinationCityCode": "PAR",
+          "@OriginAirportCode": "DJE",
+          "@DestinationAirportCode": "ORY",
+          "@FlightDate": "2021-11-17T09:30:00",
+          "@DepartureDate": "2021-11-17T11:00:00",
+          "@ArrivalDate": "2021-11-17T13:45:00",
+          "@StopoverIndicator": "J",
+          "@DirectionIndicator": "O",
+          "@CodeshareType": "NO",
+          "@EquipmentCode": "320",
+          "@ChangeOfGaugeFlightIndicator": "N",
+          "ClassDetails": {
+            "BookingClass": "Y",
+            "OperatingCabinClass": "Y",
+            "MarketingCabinClass": "Y"
+          },
+          "CompanyDetails": {
+            "MarketingCarrier": "TU",
+            "OperatingCarrier": "TU"
+          },
+          "FlightIdentification": {
+            "OperatingFlightNumber": {
+              "FlightNumber": "734"
+            },
+            "MarketingFlightNumber": {
+              "FlightNumber": "734"
+            }
+          },
+          "FullFlightInformation": {
+            "@FlightDepartureDateTime": "2021-11-17T09:30:00",
+            "@FlightDepartureAirportCode": "MIR",
+            "@FlightArrivalDateTime": "2021-11-17T13:45:00",
+            "@FlightArrivalAirportCode": "ORY",
+            "FullFlightLegs": {
+              "FullFlightLeg": [
+                {
+                  "@AircraftType": "320",
+                  "@AircraftRegistrationReference": "TSIMW"
+                },
+                {
+                  "@AircraftType": "320",
+                  "@AircraftRegistrationReference": "TSIMW"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
